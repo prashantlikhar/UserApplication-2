@@ -1,0 +1,48 @@
+﻿@{ 
+    ViewData["Title"] = "User";
+}
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/User.js"></script>
+<table>
+    <tr>
+        <td>
+            User Id
+        </td>
+        <td>
+            <input type="text" id = "txtUserId" />
+        </td>
+        <td>
+        </td>
+        <td>
+            <input type="button" value="Get OTP" onclick="GetOtp()" maxlength="9" />
+            <label id="otpExist"></label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <span id="otpText">OTP :</span>
+        </td>
+
+
+        <td>
+            <input type="text" id="txtOtp" readonly="readonly" />
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+    </tr>
+
+</table>
+
+<div>
+    <span id="timer">
+        <span id="time" ></span>
+    </span>
+</div>
+
+<div>
+    <span id="errorMessage" class="Error">
+        
+    </span>
+</div>
